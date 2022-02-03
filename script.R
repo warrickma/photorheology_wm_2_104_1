@@ -21,7 +21,7 @@ ggplot(WM_2_104, aes(x = Time, y = value, color = variable)) +
         legend.text = element_text(size = 10, face = "bold", color = "black"),
         legend.title = element_blank(),
         axis.title = element_text(size=10, color = "black", face = "bold"),
-        legend.position = c(0.8, 0.3)) +
+        legend.position = c(0.8, 0.4)) +
   scale_y_continuous(limits=c(0,0.5))+
   annotate("rect", xmin = 10, xmax = Inf, ymin = -Inf, ymax = Inf, fill = "#590098", alpha = 0.2)
-ggsave("thiols.svg", width = 80, height = 80, units = "mm")
+ggsave("thiols.svg", width = 50, height = 50, units = "mm")
